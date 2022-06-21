@@ -29,7 +29,7 @@ except Exception as err:
 ###############################################################
 @app.route("/", methods=['GET'])
 def index():
-    return "Hello world!!"
+    return "<h1Hello world!!"
 @app.route("/register", methods = ['GET', "POST"])
 def create_user():
     try:
