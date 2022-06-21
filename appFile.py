@@ -13,7 +13,6 @@ import hashlib
 # from middlewares.token_middleware import check_for_token
 
 
-import pymongo
 # Connect to database
 import pymongo
 try:
@@ -29,7 +28,7 @@ except Exception as err:
 ###############################################################
 @app.route("/", methods=['GET'])
 def index():
-    return "<h1Hello world!!"
+    return "Hello world!!"
 @app.route("/register", methods = ['GET', "POST"])
 def create_user():
     try:
@@ -233,5 +232,3 @@ def template_update(template_id):
     
         
 ###############################################################
-if __name__ == '__main__':
-    app.run()
