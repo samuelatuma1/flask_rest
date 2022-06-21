@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify, Response
 app = Flask(__name__)
-app.config.from_object('config')
+app.config['SALT'] =  b'easy' 
+app.config["SECRET_KEY"] = 'somesecretkey'
+
 import json
 # Hash Password
 
