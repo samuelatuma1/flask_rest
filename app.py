@@ -24,7 +24,10 @@ try:
 except Exception as err:
     print(err)
 
-##############################################################
+###############################################################
+@app.route("/", methods=['GET'])
+def index():
+    return "Hello world!!"
 @app.route("/register", methods = ['GET', "POST"])
 def create_user():
     try:
@@ -228,5 +231,5 @@ def template_update(template_id):
     
         
 ###############################################################
-if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+# if __name__ == '__main__':
+#     app.run(port=8000, debug=True)
