@@ -232,4 +232,4 @@ def template_update(template_id):
         
 ###############################################################
 if __name__ == '__main__':
-    app.run(port=8000, debug=True)
+    app.run()
