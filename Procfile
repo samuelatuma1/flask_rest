@@ -1,2 +1,2 @@
 web: gunicorn wsgi:app
-heroku config:set DISABLE_COLLECTSTATIC=1
+web: gunicorn — bind 0.0.0.0:$PORT app:app
